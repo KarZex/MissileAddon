@@ -1,0 +1,59 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.e5": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "walking": "(1.0)"
+                        }
+                    ]
+                },
+                "walking": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~+15 ~20 ~+15",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~-15 ~20 ~-15",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~+15 ~20 ~-15",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~-15 ~20 ~+15",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~+15 ~20 ~",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~-15 ~20 ~",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~15 ~20 ~+15",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~15 ~20 ~-15",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~15 ~20 ~",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~+25 ~20 ~+25",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~-25 ~20 ~-25",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~+25 ~20 ~-25",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~-25 ~20 ~+25",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~+25 ~20 ~",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~-25 ~20 ~",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~15 ~20 ~25",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~15 ~20 ~-25",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~+35 ~20 ~+35",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~-35 ~20 ~-35",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~+35 ~20 ~-35",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~-35 ~20 ~+35",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~+35 ~20 ~",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~-35 ~20 ~",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~15 ~20 ~35",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~15 ~20 ~-35",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~+45 ~20 ~+45",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~-45 ~20 ~-45",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~+45 ~20 ~-45",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~-45 ~20 ~+45",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~+45 ~20 ~",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~-45 ~20 ~",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~15 ~20 ~45",
+				"/execute at @e[type=event:tnt5] run summon event:tnt3b ~15 ~20 ~-45",
+   				"/event entity @e[type=event:tnt5] despawning"
+          ]
+                }
+            }
+        }
+    }
+}

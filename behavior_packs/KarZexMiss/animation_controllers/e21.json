@@ -1,0 +1,81 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.e21": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "walking": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+	  "/event entity @e[type=event:tnt21] despawning"
+          ]
+                },
+                "walking": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+          "on_entry": [	  
+            "/summon karzex:stone ~-10~~-5",
+            "/summon karzex:stone ~-10~~-3",
+            "/summon karzex:stone ~-10~~-1",
+            "/summon karzex:stone ~-10~~1",
+            "/summon karzex:stone ~-10~~3",
+            "/summon karzex:stone ~-8~~-5",
+            "/summon karzex:stone ~-8~~-3",
+            "/summon karzex:stone ~-8~~-1",
+            "/summon karzex:stone ~-8~~1",
+            "/summon karzex:stone ~-8~~3",
+            "/summon karzex:stone ~-6~~-5",
+            "/summon karzex:stone ~-6~~-3",
+            "/summon karzex:stone ~-6~~-1",
+            "/summon karzex:stone ~-6~~1",
+            "/summon karzex:stone ~-6~~3",
+            "/summon karzex:stone ~-4~~-5",
+            "/summon karzex:stone ~-4~~-3",
+            "/summon karzex:stone ~-4~~-1",
+            "/summon karzex:stone ~-4~~1",
+            "/summon karzex:stone ~-4~~3",
+            "/summon karzex:stone ~-2~~-5",
+            "/summon karzex:stone ~-2~~-3",
+            "/summon karzex:stone ~-2~~-1",
+            "/summon karzex:stone ~-2~~1",
+            "/summon karzex:stone ~-2~~3",
+            "/summon karzex:stone ~0~~-5",
+            "/summon karzex:stone ~0~~-3",
+            "/summon karzex:stone ~0~~-1",
+            "/summon karzex:stone ~0~~1",
+            "/summon karzex:stone ~0~~3",
+            "/summon karzex:stone ~2~~-5",
+            "/summon karzex:stone ~2~~-3",
+            "/summon karzex:stone ~2~~-1",
+            "/summon karzex:stone ~2~~1",
+            "/summon karzex:stone ~2~~3",
+            "/summon karzex:stone ~4~~-5",
+            "/summon karzex:stone ~4~~-3",
+            "/summon karzex:stone ~4~~-1",
+            "/summon karzex:stone ~4~~1",
+            "/summon karzex:stone ~4~~3",
+            "/summon karzex:stone ~6~~-5",
+            "/summon karzex:stone ~6~~-3",
+            "/summon karzex:stone ~6~~-1",
+            "/summon karzex:stone ~6~~1",
+            "/summon karzex:stone ~6~~3",
+            "/summon karzex:stone ~8~~-5",
+            "/summon karzex:stone ~8~~-3",
+            "/summon karzex:stone ~8~~-1",
+            "/summon karzex:stone ~8~~1",
+            "/summon karzex:stone ~8~~3",  
+            "/spreadplayers ~~ 5 40 @e[type=karzex:stone]",
+            "/event entity @e[type=karzex:stone] summon",       
+	        "/event entity @e[type=event:tnt21] despawning"
+          ]
+                }
+            }
+        }
+    }
+}

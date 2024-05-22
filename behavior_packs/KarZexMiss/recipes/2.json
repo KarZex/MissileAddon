@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "craft2"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ABA",
+      "BAB",
+      "ABA"
+    ],
+    "key": {
+      "A": {
+        "item": "block:tnt1",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:sand",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "block:tnt2",
+      "count": 1
+    }
+  }
+  
+}

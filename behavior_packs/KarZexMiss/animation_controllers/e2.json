@@ -1,0 +1,43 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.i2b": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "walking": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:c2 ~~~ ",
+   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:c2 ~~~ ",
+   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:c2 ~~~ ",
+   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:c2 ~~~ ",
+   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:e2 ~~~ ",
+   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:e2r ~~~ ",
+   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:h2 ~~~ ",
+   "/kill @e[type=addon:i2b]"
+          ]
+                },
+                "walking": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:c2 ~~~ ",
+   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:c2 ~~~ ",
+   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:c2 ~~~ ",
+   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:c2 ~~~ ",
+   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:e2 ~~~ ",
+   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:e2r ~~~ ",
+   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:h2 ~~~ ",
+   "/kill @e[type=addon:i2b]"
+          ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.e10": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "walking": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+	  "/event entity @e[type=event:tnt10] despawning"
+          ]
+                },
+                "walking": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+						"/particle minecraft:huge_explosion_emitter ~~~",
+						"/playsound random.explode @p",		  
+   "/clone ~-19 ~19 ~-19 ~19 ~-19 ~19 ~-19 ~39 ~-19 masked move",
+	  "/event entity @e[type=event:tnt10] despawning"
+          ]
+                }
+            }
+        }
+    }
+}

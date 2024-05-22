@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "event:tnt3b",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+	  "scripts": {
+	    "animate": [ "walk" ]
+	  },
+	  "animations": {
+	    "walk": "controller.animation.e1"
+	  }
+    },
+	
+	"components": {
+	  "minecraft:type_family": {
+	    "family": [ "despawncito" ]
+	  },
+      "minecraft:explode": {
+        "fuse_length": 0,
+        "fuse_lit": true,
+        "power": 36,
+        "max_resistance": 4.0,
+		"fire_affected_by_griefing": true,
+		"breaks_blocks": true
+      },
+	  "minecraft:health": {
+	    "value": 32767
+	  },
+	  "minecraft:physics": {
+	  }
+	}
+  }
+}

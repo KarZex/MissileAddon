@@ -1,0 +1,168 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "addon:missile4",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "zex:bombing": {
+        "minecraft:transformation": {
+          "into": "drop:a4"
+        }
+      },
+      "zex:missile_launched": {
+        "minecraft:timer": {
+          "time": 2,
+          "time_down_event": {
+            "event": "zex:missileup"
+          }
+        }
+      },
+      "zex:missileup": {
+        "minecraft:timer": {
+          "time": 5,
+          "time_down_event": {
+            "event": "zex:tp"
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "0"
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/a1.json"
+      },
+      "minecraft:interact": [
+        {
+          "cooldown": 0,
+          "use_item": false,
+          "play_sounds": "mob.armor_stand.place",
+          "interact_text": "action.interact.gunstand",
+          "on_interact": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "has_component",
+                  "subject": "self",
+                  "operator": "!=",
+                  "value": "zex:missile_launched"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "minecraft:type_family": {
+        "family": [
+          "missile",
+          "mob"
+        ]
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:nameable": {},
+      "minecraft:health": {
+        "value": 100,
+        "max": 200
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 1
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 8,
+        "speed_multiplier": 0.6
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:persistent": {},
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:follow_range": {
+        "value": 64
+      }
+    },
+    "events": {
+      "zex:missile_launched": {
+        "run_command": {
+          "command": [
+            "tag @s add flying"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "zex:missile_launched"
+          ]
+        }
+      },
+      "zex:missileup": {
+        "run_command": {
+          "command": [
+            "effect @s levitation 20 20 true"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "zex:missileup"
+          ]
+        }
+      },
+      "zex:tp": {
+        "run_command": {
+          "command": [
+            "scriptevent zex:missiletp"
+          ]
+        }
+      },
+      "zex:bombing": {
+        "add": {
+          "component_groups": [
+            "zex:bombing"
+          ]
+        }
+      }
+    }
+  }
+}

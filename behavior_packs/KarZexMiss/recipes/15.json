@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "craft15"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ABA",
+      "BAB",
+      "ABA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:tnt",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:ghast_tear",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "block:tnt15",
+      "count": 1
+    }
+  }
+  
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "event:a1",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+	
+	"components": {
+	  "minecraft:type_family": {
+	    "family": [ "despawncito" ]
+	  },
+        "minecraft:explode": {
+          "fuse_length": 0,
+          "fuse_lit": true,
+          "power": 4,
+          "causes_fire": true,
+          "destroy_affected_by_griefing": true
+        },
+	  "minecraft:health": {
+	    "value": 32767
+	  },
+	  "minecraft:physics": {
+	  }
+	}
+  }
+}

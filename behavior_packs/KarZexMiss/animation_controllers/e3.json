@@ -1,0 +1,38 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.e3": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "walking": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+   "/event entity @e[type=event:tnt3] despawning"
+          ]
+                },
+                "walking": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+				"/execute at @e[type=event:tnt3] run summon event:tnt3b ~+15 ~ ~+15",
+				"/execute at @e[type=event:tnt3] run summon event:tnt3b ~-15 ~ ~-15",
+				"/execute at @e[type=event:tnt3] run summon event:tnt3b ~+15 ~ ~-15",
+				"/execute at @e[type=event:tnt3] run summon event:tnt3b ~-15 ~ ~+15",
+				"/execute at @e[type=event:tnt3] run summon event:tnt3b ~+15 ~ ~",
+				"/execute at @e[type=event:tnt3] run summon event:tnt3b ~-15 ~ ~",
+				"/execute at @e[type=event:tnt3] run summon event:tnt3b ~ ~ ~+15",
+				"/execute at @e[type=event:tnt3] run summon event:tnt3b ~ ~ ~-15",
+				"/execute at @e[type=event:tnt3] run summon event:tnt3b ~ ~ ~",
+   "/event entity @e[type=event:tnt3] despawning"
+          ]
+                }
+            }
+        }
+    }
+}

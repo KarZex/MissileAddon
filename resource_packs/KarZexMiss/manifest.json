@@ -1,0 +1,19 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "§gCreate By  Zas_KR
+Please Subs My channel!!",
+    "name": "§a§lKarZex Missile addon V§g5",
+    "uuid": "27b193b0-3fa0-11ec-da9c-91d294fdd894",
+    "version": [0, 0, 2]
+  },
+  "modules": [
+    {
+      "description": "§gCreate By  Zas_KR
+Please Subs My channel!!",
+      "type": "resources",
+      "uuid": "27b1e1d0-3fa0-11ec-eaf6-31a384a9c0ee",
+      "version": [0, 0, 2]
+    }
+  ]
+}

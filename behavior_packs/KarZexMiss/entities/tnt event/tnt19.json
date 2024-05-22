@@ -1,0 +1,47 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "event:tnt19",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+	  "scripts": {
+	    "animate": [ "walk" ]
+	  },
+	  "animations": {
+	    "walk": "controller.animation.e1"
+	  }
+    },
+	"component_groups": {
+		"despawning": {
+			"minecraft:despawn": {}
+		}
+	},
+	"components": {
+	  "minecraft:type_family": {
+	    "family": [ "despawncito" ]
+	  },
+        "minecraft:explode": {
+          "fuse_length": 0,
+          "fuse_lit": true,
+          "power": 4,
+          "causes_fire": false
+        },
+	  "minecraft:health": {
+	    "value": 32767
+	  },
+	  "minecraft:physics": {
+	  }
+	},
+	"events": {
+		"despawning": {
+			"add": {
+				"component_groups": [
+					"despawning"
+				]
+			}
+		}
+	}
+  }
+}

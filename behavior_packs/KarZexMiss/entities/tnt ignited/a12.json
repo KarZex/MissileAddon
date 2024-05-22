@@ -1,0 +1,95 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ignite:tnt12",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+	  "scripts": {
+	    "animate": [ "walk","sound" ]
+	  },
+	  "animations": {
+	    "walk": "controller.animation.tnted",
+		"sound": "controller.animation.tntsound2"
+	  }
+		},
+	"component_groups": {
+		"minecraft:exploding": {
+        "minecraft:transformation": {
+          "into": "event:tnt12"
+          }
+		},
+		"minecraft:white": {
+        "minecraft:variant": {
+          "value": 1
+            }
+		},
+		"minecraft:nwhite": {
+        "minecraft:variant": {
+          "value": 2
+            }
+		}
+	 },
+		"components": {
+        "minecraft:variant": {
+          "value": 0
+        },
+			"minecraft:collision_box": {
+				"width": 0.2,
+				"height": 0.2
+			},
+			"minecraft:scale": {
+				"value": 1
+			},
+	  "minecraft:damage_sensor": [
+	    {
+		  "cause": "any",
+		  "deals_damage": false
+		}
+	  ],
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+	  "minecraft:timer": {
+	    "time": 2.5,
+		"time_down_event": { "event": "minecraft:explode" }
+	  },
+			"minecraft:physics": {}
+		},
+		"events": {
+			"minecraft:explode": {
+				"add": {
+					"component_groups": [
+						"minecraft:exploding"
+					]
+				}
+			},
+			"white": {
+				"add": {
+					"component_groups": [
+						"minecraft:white"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:nwhite"
+					]
+				}
+			},
+			"nwhite": {
+				"add": {
+					"component_groups": [
+						"minecraft:nwhite"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:white"
+					]
+				}
+			}
+		}
+	}
+}

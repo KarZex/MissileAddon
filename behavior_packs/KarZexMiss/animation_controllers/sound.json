@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.tntsound1": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "walking": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+   "/ playsound dig.grass @s[tag=!sounded]",
+   "/tag @s add sounded"
+          ]
+                },
+                "walking": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+   "/playsound dig.grass @s[tag=!sounded]",
+   "/tag @s add sounded"
+          ]
+                }
+            }
+        }
+    }
+}

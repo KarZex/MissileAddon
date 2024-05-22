@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "craft20"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ABA",
+      "BAB",
+      "ABA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:tnt",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:snowball",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "block:tnt20",
+      "count": 1
+    }
+  }
+  
+}

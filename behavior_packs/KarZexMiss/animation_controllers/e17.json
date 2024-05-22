@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.e17": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "walking": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+	  "/event entity @e[type=event:tnt17] despawning"
+          ]
+                },
+                "walking": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+						"/particle minecraft:huge_explosion_emitter ~~~",
+						"/playsound random.explode @p",		  
+   "/fill ~-10~-10~-10 ~10~10~10 lava",
+	  "/event entity @e[type=event:tnt17] despawning"
+          ]
+                }
+            }
+        }
+    }
+}

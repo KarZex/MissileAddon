@@ -1,0 +1,67 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+	  "description": {
+		"identifier": "karzex:stone",
+		"is_spawnable": false,
+		"is_summonable": true,
+		"is_experimental": false,
+		"scripts": {
+		  "animate": [ "walk" ]
+		},
+		"animations": {
+		  "walk": "controller.animation.stone"
+		}
+	  },
+	  "component_groups": {
+		  "despawning": {
+			  "minecraft:despawn": {}
+		  }
+	  },
+	  "components": {
+		"minecraft:type_family": {
+		  "family": [ "despawncito" ]
+		},
+		"minecraft:damage_sensor": {
+		  "triggers": {
+			"cause": "all",
+			"deals_damage": false
+		  }
+		},
+		"minecraft:health": {
+		  "value": 32767
+		},
+		"minecraft:physics": {
+		}
+	  },
+	  "events": {
+			
+		"summon": {
+			"run_command" : {
+				"command" : [
+					"/scoreboard players random @s rock 0 9",
+					"/execute @s[scores={rock=0}] ~0 ~50 ~0 summon karzex:rock",
+					"/execute @s[scores={rock=1}] ~0 ~80 ~0 summon karzex:rock",
+					"/execute @s[scores={rock=2}] ~0 ~110 ~0 summon karzex:rock",
+					"/execute @s[scores={rock=3}] ~0 ~140 ~0 summon karzex:rock",
+					"/execute @s[scores={rock=4}] ~0 ~170 ~0 summon karzex:rock",
+					"/execute @s[scores={rock=5}] ~0 ~200 ~0 summon karzex:rock",
+					"/execute @s[scores={rock=6}] ~0 ~230 ~0 summon karzex:rock",
+					"/execute @s[scores={rock=7}] ~0 ~260 ~0 summon karzex:rock",
+					"/execute @s[scores={rock=8}] ~0 ~290 ~0 summon karzex:rock",
+					"/execute @s[scores={rock=9}] ~0 ~320 ~0 summon karzex:rock",
+					"/event entity @s despawning"
+				]
+			}
+		},
+			
+		  "despawning": {
+			  "add": {
+				  "component_groups": [
+					  "despawning"
+				  ]
+			  }
+		  }
+	  }
+	}
+  }

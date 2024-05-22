@@ -1,0 +1,39 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.e11": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "walking": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+	  "/event entity @e[type=event:tnt11] despawning"
+          ]
+                },
+                "walking": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+   "/summon event:tntn",
+   "/summon tnt ~1~~1",
+   "/summon tnt ~1~~",
+   "/summon tnt ~1~~-1",
+   "/summon tnt ~~~1",
+   "/summon tnt ~~~",
+   "/summon tnt ~~~-1",
+   "/summon tnt ~-1~~1",
+   "/summon tnt ~-1~~",
+   "/summon tnt ~-1~~-1",
+	  "/event entity @e[type=event:tnt11] despawning"
+          ]
+                }
+            }
+        }
+    }
+}

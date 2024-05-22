@@ -1,0 +1,91 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.e7": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "walking": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+	  "/event entity @e[type=event:tnt7] despawning"
+          ]
+                },
+                "walking": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+						"/particle minecraft:huge_explosion_emitter ~~~",
+						"/playsound random.explode @p",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon zombie",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon zombie_villager",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon skeleton",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon creeper",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon spider",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon enderman",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon witch",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon phantom",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon slime",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon husk",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon stray",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon cave_spider",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon pillager",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon ravager",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon silverfish",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon vindicator",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon evocation_illager",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon vex",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon drowned",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon guardian",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon elder_guardian",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon blaze",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon ghast",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon magma_cube",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon wither_skeleton",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon piglin",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon piglin_brute",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon hoglin",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon zombie_pigman",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon zoglin",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon shulker",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon endermite",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon cow",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon pig",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon sheep",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon chicken",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon rabbit",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon horse",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon donkey",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon bee",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon llama",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon wolf",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon fox",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon polar_bear",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon mooshroom",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon ocelot",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon parrot",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon panda",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon strider",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon turtle",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon bat",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon cat",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon mule",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon skeleton_horse",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon zombie_horse",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon villager",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon wandering_trader",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon trader_llama",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon iron_golem",
+      "/execute @e[type=event:tnt7] ~ ~5 ~ summon snow_golem",
+	  "/event entity @e[type=event:tnt7] despawning"
+          ]
+                }
+            }
+        }
+    }
+}
