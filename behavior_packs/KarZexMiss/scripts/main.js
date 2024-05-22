@@ -1,8 +1,6 @@
 import { world, system } from "@minecraft/server"
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui"
 
-const INTERVAL_SEC = 1 //インターバルで1秒毎に呼ぶ
-
 world.afterEvents.playerInteractWithEntity.subscribe((Interact) => {
 	const missile = Interact.target
 	const player = Interact.player
@@ -61,7 +59,3 @@ system.afterEvents.scriptEventReceive.subscribe(event => {
 	}
 
 },)
-
-system.runInterval(() => {
-
-}, INTERVAL_SEC * 20)
