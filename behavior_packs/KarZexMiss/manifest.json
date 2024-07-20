@@ -1,9 +1,9 @@
 {
   "format_version": 2,
   "header": {
-    "description": "§gCreate By  Zas_KR \nPlease Subs My channel!!",
+    "description": "§gCreate By KarZex-Kimekun920 \nPlease Subs My channel!!",
     "name": "§a§lKarZex Missile addon V§g5",
-    "min_engine_version": [1, 20, 80],
+    "min_engine_version": [1, 21, 0],
     "uuid": "b3e2c56f-22e4-4bfc-8b13-6ef3b7f74fcd",
     "version": [1, 7, 1]
   },
@@ -20,14 +20,14 @@
       "type": "script",
       "uuid": "41b1f82d-0bd0-442b-a1a4-cd47c478d7c7",
       "version": [1, 0, 0],
-      "entry": "scripts/main.js"
+      "entry": "scripts/missileMain.js"
     }
   ],
   "capabilities": ["script_eval"],
   "dependencies": [
     {
       "module_name": "@minecraft/server",
-      "version": "1.11.0-beta"
+      "version": "1.12.0-beta"
     },
     {
       "module_name": "@minecraft/server-ui",

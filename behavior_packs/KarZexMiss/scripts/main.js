@@ -5,21 +5,7 @@ world.afterEvents.playerInteractWithEntity.subscribe((Interact) => {
 	const missile = Interact.target
 	const player = Interact.player
 	if ( missile.typeId.includes("addon:missile") ){
-		let xpos = missile.location.x
-		let zpos = missile.location.z
-		if (  world.scoreboard.getObjective("targetx").hasParticipant(missile) ){
-			xpos = world.scoreboard.getObjective("targetx").getScore(missile)
-		}
-		else{
-			world.scoreboard.getObjective("targetx").setScore(missile, xpos)
-		}
-
-		if (  world.scoreboard.getObjective("targetz").hasParticipant(missile) ){
-			zpos = world.scoreboard.getObjective("targetz").getScore(missile)
-		}
-		else{
-			world.scoreboard.getObjective("targetz").setScore(missile, zpos)
-		}
+		missile.addTag(`ready`)
 		const form = new ActionFormData()
 		form.title("Missile")
 		form.button("Target Setting")
@@ -30,12 +16,12 @@ world.afterEvents.playerInteractWithEntity.subscribe((Interact) => {
 					case 0:{
 						const form = new ModalFormData()
 						form.title("Setting Target")
-						form.textField(`Setting Target X`,`${xpos}`,`${xpos}`);
-						form.textField(`Setting Target Z`,`${zpos}`,`${zpos}`);
+						form.textField(`Setting Target X`,`${missile.location.x}`,`${missile.location.x}`);
+						form.textField(`Setting Target Z`,`${missile.location.z}`,`${missile.location.z}`);
 						form.show(player).then( r => {
 							if (!r.canceled) {
-								world.scoreboard.getObjective("targetx").setScore(missile, Number(r.formValues[0]))
-								world.scoreboard.getObjective("targetz").setScore(missile, Number(r.formValues[1]))
+								missile.setDynamicProperty(`target`,{ x:Number(r.formValues[0]), y:320, z:Number(r.formValues[1]) })
+								missile.addTag(`ready`)
 							}
 						},)
 					}; break;
@@ -51,11 +37,9 @@ world.afterEvents.playerInteractWithEntity.subscribe((Interact) => {
 
 system.afterEvents.scriptEventReceive.subscribe(event => {
 	if (event.id === "zex:missiletp"){
-		let x = world.scoreboard.getObjective("targetx").getScore(event.sourceEntity)
-		let y = event.sourceEntity.location.y
-		let z = world.scoreboard.getObjective("targetz").getScore(event.sourceEntity)
-		event.sourceEntity.teleport({ x:Number(x), y:Number(y), z:Number(z) })
-		event.sourceEntity.triggerEvent('zex:bombing')
+		const missile = event.sourceEntity
+		missile.teleport(missile.getDynamicProperty(`target`))
+		missile.triggerEvent('zex:bombing')
 	}
 
 },)

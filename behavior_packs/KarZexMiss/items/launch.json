@@ -29,7 +29,7 @@
 		"missile:launch": {
 			"run_command": {
 				"command": [
-					"event entity @e[family=missile,tag=!flying,c=1] zex:missile_launched"
+					"event entity @e[family=missile,tag=!flying,c=1,tag=ready] zex:missile_launched"
 				],
 				"target": "holder"
 			}
