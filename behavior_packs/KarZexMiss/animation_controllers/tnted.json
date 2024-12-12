@@ -32,6 +32,40 @@
           ]
                 }
             }
+        },
+        "controller.animation.tnted19": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "walking": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+   "/scoreboard objectives add tnt dummy",
+   "/scoreboard players add @s tnt 1",
+   "/tp @s @e[c=1,family=mob]",
+   "/event entity @s[scores={tnt=5}] white",
+   "/event entity @s[scores={tnt=10}] nwhite",
+   "/scoreboard players set @s[scores={tnt=10}] tnt 0"
+          ]
+                },
+                "walking": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+   "/scoreboard objectives add tnt dummy",
+   "/scoreboard players add @s tnt 1",
+   "/tp @s @e[c=1,family=mob]",
+   "/event entity @s[scores={tnt=5}] white",
+   "/event entity @s[scores={tnt=10}] nwhite",
+   "/scoreboard players set @s[scores={tnt=10}] tnt 0"
+          ]
+                }
+            }
         }
     }
 }

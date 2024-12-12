@@ -22,7 +22,6 @@
           "on_entry": [
 						"/particle minecraft:huge_explosion_emitter ~~~",
 						"/playsound random.explode @p",		  
-   "/fill ~-10~-10~-10 ~10~10~10 water",
 	  "/event entity @e[type=event:tnt19] despawning"
           ]
                 }

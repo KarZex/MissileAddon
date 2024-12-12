@@ -10,7 +10,7 @@
 	    "animate": [ "walk" ]
 	  },
 	  "animations": {
-	    "walk": "controller.animation.tnted"
+	    "walk": "controller.animation.tnted19"
 	  }
     },
 	"component_groups": {

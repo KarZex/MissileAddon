@@ -10,7 +10,7 @@
 	    "animate": [ "walk" ]
 	  },
 	  "animations": {
-	    "walk": "controller.animation.e1"
+	    "walk": "controller.animation.e19"
 	  }
     },
 	"component_groups": {
