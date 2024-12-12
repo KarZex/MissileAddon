@@ -10,13 +10,13 @@
                         }
                     ],
           "on_entry": [
-   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:c2 ~~~ ",
-   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:c2 ~~~ ",
-   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:c2 ~~~ ",
-   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:c2 ~~~ ",
-   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:e2 ~~~ ",
-   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:e2r ~~~ ",
-   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:h2 ~~~ ",
+   "/execute at @s run summon addon:c2 ~~~ ",
+   "/execute at @s run summon addon:c2 ~~~ ",
+   "/execute at @s run summon addon:c2 ~~~ ",
+   "/execute at @s run summon addon:c2 ~~~ ",
+   "/execute at @s run summon addon:e2 ~~~ ",
+   "/execute at @s run summon addon:e2r ~~~ ",
+   "/execute at @s run summon addon:h2 ~~~ ",
    "/kill @e[type=addon:i2b]"
           ]
                 },
@@ -27,13 +27,13 @@
                         }
                     ],
           "on_entry": [
-   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:c2 ~~~ ",
-   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:c2 ~~~ ",
-   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:c2 ~~~ ",
-   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:c2 ~~~ ",
-   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:e2 ~~~ ",
-   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:e2r ~~~ ",
-   "/execute @e[type=addon:i2b] ~ ~ ~ summon addon:h2 ~~~ ",
+   "/execute at @s runsummon addon:c2 ~~~ ",
+   "/execute at @s runsummon addon:c2 ~~~ ",
+   "/execute at @s runsummon addon:c2 ~~~ ",
+   "/execute at @s runsummon addon:c2 ~~~ ",
+   "/execute at @s runsummon addon:e2 ~~~ ",
+   "/execute at @s runsummon addon:e2r ~~~ ",
+   "/execute at @s runsummon addon:h2 ~~~ ",
    "/kill @e[type=addon:i2b]"
           ]
                 }

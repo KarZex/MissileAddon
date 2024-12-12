@@ -1,24 +1,14 @@
 {
   "format_version": "1.12",
-  "minecraft:recipe_shaped": {
+  "minecraft:recipe_furnace": {
     "description": {
-    "identifier": "crafttg"
+    "identifier": "zex:uranium_rod_recipe"
     },
-    "tags": [ "crafting_table" ],
-    "pattern": [
-      "AAA",
-	  "AXX"
-    ],
-    "key": {
-      "A": {
-        "item": "minecraft:iron_ingot",
-        "data": 0
-      }
-    },
-    "result": {
-      "item": "item:tg",
-      "count": 1
-    }
+
+    
+    "tags": ["furnace"],
+    "input": "zex:heavy_matter",
+    "output": "zex:uranium_rod"
   }
   
 }

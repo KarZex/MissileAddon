@@ -2,11 +2,11 @@
   "resource_pack_name": "vanilla",
   "texture_name": "atlas.items",
   "texture_data": {
-		"b1":{
-			"textures": "textures/items/b1"
+		"heavy_matter":{
+			"textures": "textures/items/heavy_matter"
 		},
-		"tg":{
-			"textures": "textures/items/tg"
+		"uranium_rod":{
+			"textures": "textures/items/uranium_rod"
 		},
 		"missile":{
 			"textures": "textures/items/m0"

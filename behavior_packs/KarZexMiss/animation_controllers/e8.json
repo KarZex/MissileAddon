@@ -22,14 +22,14 @@
           "on_entry": [
 						"/particle minecraft:huge_explosion_emitter ~~~",
 						"/playsound random.explode @p",		  
-   "/fill ~~~ ~49~10~49 air",
-   "/fill ~~~ ~49~20~49 air",
-   "/fill ~~~ ~-49~10~49 air",
-   "/fill ~~~ ~-49~20~49 air",
-   "/fill ~~~ ~49~10~-49 air",
-   "/fill ~~~ ~49~20~-49 air",
-   "/fill ~~~ ~-49~10~-49 air",
-   "/fill ~~~ ~-49~20~-49 air",
+   "/fill ~~~ ~19~10~19 air",
+   "/fill ~~~ ~19~20~19 air",
+   "/fill ~~~ ~-19~10~19 air",
+   "/fill ~~~ ~-19~20~19 air",
+   "/fill ~~~ ~19~10~-19 air",
+   "/fill ~~~ ~19~20~-19 air",
+   "/fill ~~~ ~-19~10~-19 air",
+   "/fill ~~~ ~-19~20~-19 air",
 	  "/event entity @e[type=event:tnt8] despawning"
           ]
                 }

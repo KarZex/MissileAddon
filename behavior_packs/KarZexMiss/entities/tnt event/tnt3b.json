@@ -22,7 +22,6 @@
         "fuse_length": 0,
         "fuse_lit": true,
         "power": 36,
-        "max_resistance": 4.0,
 		"fire_affected_by_griefing": true,
 		"breaks_blocks": true
       },

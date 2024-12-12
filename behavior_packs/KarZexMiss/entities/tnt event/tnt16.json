@@ -22,6 +22,12 @@
 	  "minecraft:type_family": {
 	    "family": [ "despawncito" ]
 	  },
+      "minecraft:timer": {
+        "time": 5,
+        "time_down_event": {
+          "event": "despawning"
+        }
+      },
       "minecraft:damage_sensor": {
         "triggers": {
           "cause": "all",

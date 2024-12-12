@@ -22,7 +22,7 @@
           "on_entry": [
 						"/particle minecraft:huge_explosion_emitter ~~~",
 						"/playsound random.explode @p",		  
-   "/fill ~-15~-1~-15 ~15~1~15 snow_layer 0 keep",
+   "/fill ~-10~-3~-10 ~10~3~10 snow_layer keep",
 	  "/event entity @e[type=event:tnt20] despawning"
           ]
                 }

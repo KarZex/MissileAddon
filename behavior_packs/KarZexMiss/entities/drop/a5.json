@@ -24,12 +24,6 @@
       "minecraft:scale": {
         "value": 1
       },
-      "minecraft:timer": {
-        "time": 3.5,
-        "time_down_event": {
-          "event": "minecraft:explode"
-        }
-      },
       "minecraft:projectile": {
         "onHit": {
           "definition_event": {

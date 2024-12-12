@@ -22,10 +22,10 @@
           "on_entry": [
 						"/particle minecraft:huge_explosion_emitter ~~~",
 						"/playsound random.explode @p",		  
-   "/fill ~-30~-1~-30 ~30~-1~30 fire 0 keep",
-   "/fill ~-30~~-30 ~30~~30 fire 0 keep",
-   "/fill ~-30~1~-30 ~30~1~30 fire 0 keep",
-	  "/event entity @e[type=event:tnt13] despawning"
+                        "/fill ~-10~-1~-10 ~10~-1~10 fire keep",
+                        "/fill ~-10~~-10 ~10~~10 fire keep",
+                        "/fill ~-10~1~-10 ~10~1~10 fire keep",
+                        "/event entity @e[type=event:tnt13] despawning"
           ]
                 }
             }

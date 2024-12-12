@@ -12,7 +12,7 @@
     ],
     "key": {
       "A": {
-        "item": "block:tnt3",
+        "item": "zex:tnt3",
         "data": 0
       },
       "B": {
@@ -21,7 +21,7 @@
       }
     },
     "result": {
-      "item": "block:tnt4",
+      "item": "zex:tnt4",
       "count": 1
     }
   }

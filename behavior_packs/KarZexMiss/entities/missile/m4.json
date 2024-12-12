@@ -1,5 +1,5 @@
 {
-  "format_version": "1.8.0",
+  "format_version": "1.21.0",
   "minecraft:entity": {
     "description": {
       "identifier": "addon:missile4",
@@ -35,33 +35,35 @@
         "on_death": "0"
       },
       "minecraft:loot": {
-        "table": "loot_tables/entities/a1.json"
+        "table": "loot_tables/missile/m4.json"
       },
-      "minecraft:interact": [
-        {
-          "cooldown": 0,
-          "use_item": false,
-          "play_sounds": "mob.armor_stand.place",
-          "interact_text": "action.interact.gunstand",
-          "on_interact": {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "player"
-                },
-                {
-                  "test": "has_component",
-                  "subject": "self",
-                  "operator": "!=",
-                  "value": "zex:missile_launched"
-                }
-              ]
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "cooldown": 0,
+            "use_item": false,
+            "play_sounds": "mob.armor_stand.place",
+            "interact_text": "action.interact.gunstand",
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_component",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": "zex:missile_launched"
+                  }
+                ]
+              }
             }
           }
-        }
-      ],
+        ]
+      },
       "minecraft:type_family": {
         "family": [
           "missile",
@@ -77,8 +79,8 @@
       },
       "minecraft:nameable": {},
       "minecraft:health": {
-        "value": 100,
-        "max": 200
+        "value": 1,
+        "max": 1
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -109,12 +111,6 @@
         "priority": 1
       },
       "minecraft:persistent": {},
-      "minecraft:damage_sensor": {
-        "triggers": {
-          "cause": "all",
-          "deals_damage": false
-        }
-      },
       "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": false,
@@ -126,7 +122,7 @@
     },
     "events": {
       "zex:missile_launched": {
-        "run_command": {
+        "queue_command": {
           "command": [
             "tag @s add flying"
           ]
@@ -138,7 +134,7 @@
         }
       },
       "zex:missileup": {
-        "run_command": {
+        "queue_command": {
           "command": [
             "effect @s levitation 20 20 true"
           ]
@@ -150,7 +146,7 @@
         }
       },
       "zex:tp": {
-        "run_command": {
+        "queue_command": {
           "command": [
             "scriptevent zex:missiletp"
           ]

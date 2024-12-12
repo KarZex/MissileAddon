@@ -12,16 +12,14 @@
     ],
     "key": {
       "A": {
-        "item": "minecraft:netherstar",
-        "data": 0
+        "item": "zex:uranium_rod"
       },
       "B": {
-        "item": "minecraft:sand",
-        "data": 0
+        "item": "zex:tnt3"
       }
     },
     "result": {
-      "item": "block:tnt5",
+      "item": "zex:tnt5",
       "count": 1
     }
   }

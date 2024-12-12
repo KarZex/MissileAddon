@@ -2,23 +2,23 @@
   "format_version": 2,
   "header": {
     "description": "§gCreate By KarZex-Kimekun920 \nPlease Subs My channel!!",
-    "name": "§a§lKarZex Missile addon V§g5",
-    "min_engine_version": [1, 21, 0],
-    "uuid": "b3e2c56f-22e4-4bfc-8b13-6ef3b7f74fcd",
+    "name": "§g§lMissile And TNT Addon V§c6",
+    "min_engine_version": [1, 21, 20],
+    "uuid": "68241c84-72c9-4d1a-bac1-edf23ae1aa13",
     "version": [1, 7, 1]
   },
   "modules": [
     {
       "description": "Data Module",
       "type": "data",
-      "uuid": "ddca55bd-a7e0-43b8-a9b7-66cab7d9369c",
+      "uuid": "38d906ea-2fcb-44f7-9aac-d38c117b00a4",
       "version": [1, 0, 0]
     },
     {
       "description": "Script API Module",
       "language": "javascript",
       "type": "script",
-      "uuid": "41b1f82d-0bd0-442b-a1a4-cd47c478d7c7",
+      "uuid": "db24878a-8a98-4dac-b434-2a576227402d",
       "version": [1, 0, 0],
       "entry": "scripts/missileMain.js"
     }
@@ -27,11 +27,11 @@
   "dependencies": [
     {
       "module_name": "@minecraft/server",
-      "version": "1.12.0-beta"
+      "version": "1.16.0"
     },
     {
       "module_name": "@minecraft/server-ui",
-      "version": "1.2.0-beta"
+      "version": "1.2.0"
     }
   ]
 }

@@ -10,7 +10,7 @@
             }
           ],
           "on_entry": [
-            "/execute @s ~~~ particle minecraft:mobflame_single ~~~"
+            "/execute at @s run particle minecraft:mobflame_single ~~~"
           ]
         },
         "ticking": {
@@ -20,7 +20,7 @@
             }
           ],
           "on_entry": [
-            "/execute @s ~~~ particle minecraft:mobflame_single ~~~"
+            "/execute at @s run particle minecraft:mobflame_single ~~~"
           ]
         }
       }

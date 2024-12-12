@@ -1,0 +1,37 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.nuclear_core": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "walking": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+            "/effect @e[r=60] wither 10 1",
+            "/effect @e[r=60,m=!c] slowness 10 1",
+            "/effect @e[r=60,m=!c] blindness 10 1",
+            "/effect @e[r=60] weakness 10 1",
+            "/effect @e[r=60] hunger 10 1"
+          ]
+                },
+                "walking": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+          "on_entry": [
+            "/effect @e[r=60] wither 10 1",
+            "/effect @e[r=60,m=!c] slowness 10 1",
+            "/effect @e[r=60,m=!c] blindness 10 1",
+            "/effect @e[r=60] weakness 10 1",
+            "/effect @e[r=60] hunger 10 1"
+          ]
+                }
+            }
+        }
+    }
+}

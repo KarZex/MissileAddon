@@ -10,7 +10,7 @@
 	    "animate": [ "walk" ]
 	  },
 	  "animations": {
-	    "walk": "controller.animation.e5"
+	    "walk": "animation.e5"
 	  }
     },
 	"component_groups": {

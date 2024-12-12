@@ -1,36 +1,52 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.20.60",
   "minecraft:block": {
     "description": {
-      "identifier": "block:tnt1",
-      "register_to_creative_menu": true,
-      "category": "Construction"
+      "identifier": "zex:tnt1",
+      "menu_category": {
+        "category": "construction"
+      }
     },
     "components": {
-	"minecraft:creative_category": {
-    "group": "itemGroup.name.kar_zex",
-    "category": "items"
-	},
-      "minecraft:loot": "loot_tables/blocks/tnt1.json",
-      "minecraft:destroy_time": 0.01,
-      "minecraft:explosion_resistance": 100,
-	  "minecraft:on_interact": {
-	    "condition": "(query.get_equipped_item_name('main_hand') == 'flint_and_steel') || (query.get_equipped_item_name('main_hand') == 'fire_charge')",
-		"event": "minecraft:ignite"
-	  },
-      "minecraft:map_color": "#FF0000"
-    },
-    "events": {
-	  "minecraft:ignite": {
-		"run_command": {
-	      "command": [
-	        "playsound random.fuse @p",
-	        "summon ignite:tnt1 ~~0.2~",
-	        "fill ~~~ ~~~ air"
-          ],
-	      "target": "self"
-	    }
-	  }
+      "minecraft:material_instances": {
+        "up": {
+          "texture": "tnt1_top"
+        },
+        "down": {
+          "texture": "tnt1_bottom"
+        },
+        "north": {
+          "texture": "tnt1_side"
+        },
+        "south": {
+          "texture": "tnt1_side"
+        },
+        "east": {
+          "texture": "tnt1_side"
+        },
+        "west": {
+          "texture": "tnt1_side"
+        }
+      },
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:custom_components": [
+        "zex:ignite"
+      ],
+      "minecraft:light_emission": 0,
+      "minecraft:light_dampening": 15,
+      "minecraft:map_color": "#00ff00"
     }
   }
 }

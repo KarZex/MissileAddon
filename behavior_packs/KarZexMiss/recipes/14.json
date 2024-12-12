@@ -21,7 +21,7 @@
       }
     },
     "result": [
-     {"item": "block:tnt14", "count": 1 },
+     {"item": "zex:tnt14", "count": 1 },
 	 { "item": "minecraft:bucket", "count": 4, "data": 0 }
     ]
   }

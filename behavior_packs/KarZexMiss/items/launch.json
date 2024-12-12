@@ -1,40 +1,18 @@
 {
-  "format_version": "1.16.100",
+  "format_version": "1.21.10",
   "minecraft:item": {
     "description": {
-      "identifier": "item:launch",
-	  "category" : "equipment" 
+      "identifier": "zex:launch",
+      "menu_category": {
+        "category": "equipment"
+      }
     },
-
     "components": {
       "minecraft:can_destroy_in_creative": false,
       "minecraft:max_stack_size": 1,
-      "minecraft:hand_equipped": true,
-      "minecraft:use_duration": 99999,
-      "minecraft:icon": {
-        "texture": "sw"
-      },
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.guns"
-      },
-	  "minecraft:on_use": {
-		"on_use": {
-			"event": "missile:launch",
-			"target": "self"
-		}
-	  }
-    },
-
-	"events": {
-		"missile:launch": {
-			"run_command": {
-				"command": [
-					"event entity @e[family=missile,tag=!flying,c=1,tag=ready] zex:missile_launched"
-				],
-				"target": "holder"
-			}
-		}
-	
-	}								
+      "minecraft:hand_equipped": false,
+      "minecraft:icon": "sw",
+      "minecraft:custom_components": [ "zex:launch" ]
+    }
   }
 }

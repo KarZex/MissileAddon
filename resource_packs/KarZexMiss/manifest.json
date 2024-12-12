@@ -1,18 +1,17 @@
 {
-  "format_version": 1,
+  "format_version": 2,
   "header": {
-    "description": "§gCreate By  Zas_KR
-Please Subs My channel!!",
-    "name": "§a§lKarZex Missile addon V§g5",
-    "uuid": "27b193b0-3fa0-11ec-da9c-91d294fdd894",
+    "description": "§gCreate By KarZex-Kimekun920 \nPlease Subs My channel!!",
+    "name": "§g§lMissile And TNT Addon V§c6",
+    "min_engine_version": [ 1,21,20  ],
+    "uuid": "1838a8d3-6aa9-41da-8c60-d2734b06a2fb",
     "version": [0, 0, 2]
   },
   "modules": [
     {
-      "description": "§gCreate By  Zas_KR
-Please Subs My channel!!",
+      "description": "§gCreate By KarZex-Kimekun920 \nPlease Subs My channel!!",
       "type": "resources",
-      "uuid": "27b1e1d0-3fa0-11ec-eaf6-31a384a9c0ee",
+      "uuid": "4077246f-3c92-439b-a361-e74626ed1080",
       "version": [0, 0, 2]
     }
   ]

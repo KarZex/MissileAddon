@@ -1,0 +1,51 @@
+{
+    "format_version": "1.10.0",
+    "animations": {
+        "animation.e5": {
+			"timeline": {
+			  "0.0": [
+				"/summon zex:nuclear_cloud ~~10~"
+	
+			],
+			"4.0": [ 
+				"/execute at @s run summon event:tnt3b_2 ~+15 ~20 ~+15",
+				"/execute at @s run summon event:tnt3b_2 ~-15 ~20 ~-15",
+				"/execute at @s run summon event:tnt3b_2 ~+15 ~20 ~-15",
+				"/execute at @s run summon event:tnt3b_2 ~-15 ~20 ~+15",
+				"/execute at @s run summon event:tnt3b_2 ~+15 ~20 ~",
+				"/execute at @s run summon event:tnt3b_2 ~-15 ~20 ~",
+				"/execute at @s run summon event:tnt3b_2 ~15 ~20 ~+15",
+				"/execute at @s run summon event:tnt3b_2 ~15 ~20 ~-15",
+				"/execute at @s run summon event:tnt3b_2 ~15 ~20 ~",
+				"/execute at @s run summon event:tnt3b_2 ~+25 ~20 ~+25",
+				"/execute at @s run summon event:tnt3b_2 ~-25 ~20 ~-25",
+				"/execute at @s run summon event:tnt3b_2 ~+25 ~20 ~-25",
+				"/execute at @s run summon event:tnt3b_2 ~-25 ~20 ~+25",
+				"/execute at @s run summon event:tnt3b_2 ~+25 ~20 ~",
+				"/execute at @s run summon event:tnt3b_2 ~-25 ~20 ~",
+				"/execute at @s run summon event:tnt3b_2 ~15 ~20 ~25",
+				"/execute at @s run summon event:tnt3b_2 ~15 ~20 ~-25",
+				"/execute at @s run summon event:tnt3b_2 ~+35 ~20 ~+35",
+				"/execute at @s run summon event:tnt3b_2 ~-35 ~20 ~-35",
+				"/execute at @s run summon event:tnt3b_2 ~+35 ~20 ~-35",
+				"/execute at @s run summon event:tnt3b_2 ~-35 ~20 ~+35",
+				"/execute at @s run summon event:tnt3b_2 ~+35 ~20 ~",
+				"/execute at @s run summon event:tnt3b_2 ~-35 ~20 ~",
+				"/execute at @s run summon event:tnt3b_2 ~15 ~20 ~35",
+				"/execute at @s run summon event:tnt3b_2 ~15 ~20 ~-35",
+				"/execute at @s run summon event:tnt3b_2 ~+45 ~20 ~+45",
+				"/execute at @s run summon event:tnt3b_2 ~-45 ~20 ~-45",
+				"/execute at @s run summon event:tnt3b_2 ~+45 ~20 ~-45",
+				"/execute at @s run summon event:tnt3b_2 ~-45 ~20 ~+45",
+				"/execute at @s run summon event:tnt3b_2 ~+45 ~20 ~",
+				"/execute at @s run summon event:tnt3b_2 ~-45 ~20 ~",
+				"/execute at @s run summon event:tnt3b_2 ~15 ~20 ~45",
+				"/execute at @s run summon event:tnt3b_2 ~15 ~20 ~-45",
+				"/summon zex:nuclear_core ~~~",
+   				"/event entity @s despawning"
+			]
+	
+			}
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "zex:heavy_matter_recipe"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "AAA",
+      "AAA",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:obsidian",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:egg",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "zex:heavy_matter",
+      "count": 1
+    }
+  }
+  
+}

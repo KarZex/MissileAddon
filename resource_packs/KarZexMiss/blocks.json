@@ -1,251 +1,66 @@
 {
   "format_version": [   1,  1, 0 ],
-  "block:tnt1": {
-    "textures": {
-	  "up": "tnt1_top",
-	  "side": "tnt1_side",
-	  "down": "tnt1_bottom"
-	},
+  "zex:tnt1": {
     "sound": "grass"
   },
-  "block:tnt2": {
-    "textures": {
-	  "up": "tnt2_top",
-	  "side": "tnt2_side",
-	  "down": "tnt2_bottom"
-	},
+  "zex:tnt2": {
     "sound": "grass"
   },
-  "block:tnt3": {
-    "textures": {
-	  "up": "tnt3_top",
-	  "side": "tnt3_side",
-	  "down": "tnt3_bottom"
-	},
+  "zex:tnt3": {
     "sound": "grass"
   },
-  "block:tnt4": {
-    "textures": {
-	  "up": "tnt4_top",
-	  "side": "tnt4_side",
-	  "down": "tnt4_bottom"
-	},
+  "zex:tnt4": {
     "sound": "grass"
   },
-  "block:tnt5": {
-    "textures": {
-	  "up": "tnt5_top",
-	  "side": "tnt5_side",
-	  "down": "tnt5_bottom"
-	},
+  "zex:tnt5": {
     "sound": "grass"
   },
-  "block:tnt6": {
-    "textures": {
-	  "up": "tnt6_top",
-	  "side": "tnt6_side",
-	  "down": "tnt6_bottom"
-	},
+  "zex:tnt6": {
     "sound": "grass"
   },
-  "block:tnt7": {
-    "textures": {
-	  "up": "tnt7_top",
-	  "side": "tnt7_side",
-	  "down": "tnt7_bottom"
-	},
+  "zex:tnt7": {
     "sound": "grass"
   },
-  "block:tnt8": {
-    "textures": {
-	  "up": "tnt8_top",
-	  "side": "tnt8_side",
-	  "down": "tnt8_bottom"
-	},
+  "zex:tnt8": {
     "sound": "grass"
   },
-  "block:tnt9": {
-    "textures": {
-	  "up": "tnt9_top",
-	  "side": "tnt9_side",
-	  "down": "tnt9_bottom"
-	},
+  "zex:tnt9": {
     "sound": "grass"
   },
-  "block:tnt10": {
-    "textures": {
-	  "up": "tnt10_top",
-	  "side": "tnt10_side",
-	  "down": "tnt10_bottom"
-	},
+  "zex:tnt10": {
     "sound": "grass"
   },
-  "block:tnt11": {
-    "textures": {
-	  "up": "tnt11_top",
-	  "side": "tnt11_side",
-	  "down": "tnt11_bottom"
-	},
+  "zex:tnt11": {
     "sound": "grass"
   },
-  "block:tnt12": {
-    "textures": {
-	  "up": "tnt12_top",
-	  "side": "tnt12_side",
-	  "down": "tnt12_bottom"
-	},
+  "zex:tnt12": {
     "sound": "grass"
   },
-  "block:tnt13": {
-    "textures": {
-	  "up": "tnt13_top",
-	  "side": "tnt13_side",
-	  "down": "tnt13_bottom"
-	},
+  "zex:tnt13": {
     "sound": "grass"
   },
-   "block:tnt14": {
-    "textures": {
-	  "up": "tnt14_top",
-	  "side": "tnt14_side",
-	  "down": "tnt14_bottom"
-	},
+   "zex:tnt14": {
     "sound": "grass"
   },
-   "block:tnt15": {
-    "textures": {
-	  "up": "tnt15_top",
-	  "side": "tnt15_side",
-	  "down": "tnt15_bottom"
-	},
+   "zex:tnt15": {
     "sound": "grass"
   },
-   "block:tnt16": {
-    "textures": {
-	  "up": "tnt16_top",
-	  "side": "tnt16_side",
-	  "down": "tnt16_bottom"
-	},
+   "zex:tnt16": {
     "sound": "grass"
   },
-   "block:tnt17": {
-    "textures": {
-	  "up": "tnt17_top",
-	  "side": "tnt17_side",
-	  "down": "tnt17_bottom"
-	},
+   "zex:tnt17": {
     "sound": "grass"
   },
-   "block:tnt18": {
-    "textures": {
-	  "up": "tnt18_top",
-	  "side": "tnt18_side",
-	  "down": "tnt18_bottom"
-	},
+   "zex:tnt18": {
     "sound": "grass"
   },
-   "block:tnt19": {
-    "textures": {
-	  "up": "tnt19_top",
-	  "side": "tnt19_side",
-	  "down": "tnt19_bottom"
-	},
+   "zex:tnt19": {
     "sound": "grass"
   },
-   "block:tnt20": {
-    "textures": {
-	  "up": "tnt20_top",
-	  "side": "tnt20_side",
-	  "down": "tnt20_bottom"
-	},
+   "zex:tnt20": {
     "sound": "grass"
   },
-   "block:tnt21": {
-    "textures": {
-	  "up": "tnt21_top",
-	  "side": "tnt21_side",
-	  "down": "tnt21_bottom"
-	},
-    "sound": "grass"
-  },
-   "block:tnt22": {
-    "textures": {
-	  "up": "tnt22_top",
-	  "side": "tnt22_side",
-	  "down": "tnt22_bottom"
-	},
-    "sound": "grass"
-  },
-   "block:tnt23": {
-    "textures": {
-	  "up": "tnt23_top",
-	  "side": "tnt23_side",
-	  "down": "tnt23_bottom"
-	},
-    "sound": "grass"
-  },
-   "block:tnt24": {
-    "textures": {
-	  "up": "tnt24_top",
-	  "side": "tnt24_side",
-	  "down": "tnt24_bottom"
-	},
-    "sound": "grass"
-  },
-   "block:tnt25": {
-    "textures": {
-	  "up": "tnt25_top",
-	  "side": "tnt25_side",
-	  "down": "tnt25_bottom"
-	},
-    "sound": "grass"
-  },
-   "block:tnt26": {
-    "textures": {
-	  "up": "tnt26_top",
-	  "side": "tnt26_side",
-	  "down": "tnt26_bottom"
-	},
-    "sound": "grass"
-  },
-   "block:tnt27": {
-    "textures": {
-	  "up": "tnt27_top",
-	  "side": "tnt27_side",
-	  "down": "tnt27_bottom"
-	},
-    "sound": "grass"
-  },
-   "block:tnt28": {
-    "textures": {
-	  "up": "tnt28_top",
-	  "side": "tnt28_side",
-	  "down": "tnt28_bottom"
-	},
-    "sound": "grass"
-  },
-   "block:tnt29": {
-    "textures": {
-	  "up": "tnt29_top",
-	  "side": "tnt29_side",
-	  "down": "tnt29_bottom"
-	},
-    "sound": "grass"
-  },
-   "block:tnt30": {
-    "textures": {
-	  "up": "tnt30_top",
-	  "side": "tnt30_side",
-	  "down": "tnt30_bottom"
-	},
-    "sound": "grass"
-  },
-   "block:tnt31": {
-    "textures": {
-	  "up": "tnt31_top",
-	  "side": "tnt31_side",
-	  "down": "tnt31_bottom"
-	},
+   "zex:tnt21": {
     "sound": "grass"
   }
 }

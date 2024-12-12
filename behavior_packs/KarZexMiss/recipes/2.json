@@ -12,16 +12,14 @@
     ],
     "key": {
       "A": {
-        "item": "block:tnt1",
-        "data": 0
+        "item": "minecraft:sand"
       },
       "B": {
-        "item": "minecraft:sand",
-        "data": 0
+        "item": "zex:tnt1"
       }
     },
     "result": {
-      "item": "block:tnt2",
+      "item": "zex:tnt2",
       "count": 1
     }
   }

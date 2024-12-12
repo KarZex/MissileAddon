@@ -54,7 +54,8 @@
       },
 	  "minecraft:timer": {
 	    "time": 2.5,
-		"time_down_event": { "event": "minecraft:explode" }
+		"time_down_event": { "event": "minecraft:explode" },
+		"looping": true
 	  },
 			"minecraft:physics": {}
 		},
